@@ -38,7 +38,7 @@ const camera = new THREE.PerspectiveCamera(
   0.1,
   100
 );
-camera.position.set(0, 0, 7.5);
+camera.position.set(0, 0, 6.8);
 scene.add(camera);
 
 // ==========================================
@@ -119,8 +119,8 @@ function createHeartGeometry() {
   geometry.center(); // Kalbin tam ağırlık merkezine hizala
   geometry.computeVertexNormals();
 
-  // Boyut ölçekleme
-  geometry.scale(0.85, 0.85, 0.85);
+  // Boyut ölçekleme (Ekrana tam oturan ideal boyut)
+  geometry.scale(0.95, 0.95, 0.95);
 
   return geometry;
 }

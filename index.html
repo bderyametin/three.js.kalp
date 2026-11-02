@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Three.js - 3D Dönen Pembe Kalp</title>
     <link rel="stylesheet" href="./src/style.css" />
+    <!-- GitHub Pages ve CDN doğrudan modül desteği için Import Map -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.174.0/build/three.module.js",
+          "three/examples/jsm/controls/OrbitControls.js": "https://unpkg.com/three@0.174.0/examples/jsm/controls/OrbitControls.js"
+        }
+      }
+    </script>
   </head>
   <body>
     <canvas class="webgl"></canvas>
